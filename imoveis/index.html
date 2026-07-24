@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efetive Imobiliária — O melhor imóvel da Grande Natal espera por você</title>
+<meta name="description" content="Consultoria imobiliária especialista em Minha Casa Minha Vida na Grande Natal. Encontramos o imóvel certo para o seu perfil, com a melhor taxa e o maior subsídio. Consultoria 100% gratuita.">
+<meta property="og:title" content="Efetive Imobiliária — Saia do aluguel com quem entende do assunto">
+<meta property="og:description" content="Consultoria imobiliária na Grande Natal. Subsídio de até R$ 55 mil e parcelas a partir de R$ 455. Fale com um consultor.">
+<meta property="og:type" content="website">
+
+<!-- ============================================================
+     EFETIVE IMOBILIÁRIA — LANDING PAGE (100% WhatsApp)
+     PERSONALIZAR: WHATSAPP / INSTAGRAM / YOUTUBE no <script> final.
+     PIXEL META: cole o código no local indicado (procure "PIXEL META").
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0E1E38;
+  --ink-soft:#16294C;
+  --petrol:#1E3A66;
+  --gold:#C69A4C;
+  --gold-2:#E7CC85;
+  --sand:#F7F3EC;
+  --sand-2:#EEE7D7;
+  --white:#FFFFFF;
+  --green:#2F7D5A;
+  --red:#B4472F;
+  --muted:#59637A;
+  --line:rgba(14,30,56,.12);
+  --shadow:0 24px 60px -30px rgba(14,30,56,.5);
+  --shadow-sm:0 12px 30px -18px rgba(14,30,56,.42);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:0}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.06;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.7}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:.98rem;padding:.95rem 1.7rem;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease;text-align:center}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 14px 34px -14px rgba(198,154,76,.85)}
+.btn-gold:hover{transform:translateY(-2px);background:var(--gold-2)}
+.btn-wa{background:#25D366;color:#08331C;box-shadow:0 14px 34px -14px rgba(37,211,102,.8)}
+.btn-wa:hover{transform:translateY(-2px);background:#2FE676}
+.btn-outline{border-color:rgba(247,243,236,.35);color:var(--sand)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold-2)}
+.btn-dark{background:var(--ink);color:var(--sand)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.btn-lg{font-size:1.08rem;padding:1.15rem 2.2rem}
+.btn svg{width:19px;height:19px;flex:none}
+
+header{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.logo-img{height:44px;width:auto;flex:none;display:block}
+.brand-name{font-family:'Fraunces',serif;font-weight:600;font-size:1.1rem;line-height:1}
+.brand-name span{display:block;font-family:'Instrument Sans',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav-links{display:flex;gap:1.8rem;font-size:.92rem;font-weight:500}
+.nav-links a{color:var(--ink-soft);opacity:.8;transition:opacity .2s}
+.nav-links a:hover{opacity:1;color:var(--gold)}
+
+/* HERO */
+.hero{position:relative;background:var(--ink);color:var(--sand);padding:clamp(3.2rem,6vw,5.5rem) 0 clamp(3.8rem,7vw,6.5rem);overflow:hidden}
+.hero::before{content:"";position:absolute;top:-30%;right:-10%;width:70vw;height:70vw;max-width:820px;max-height:820px;background:radial-gradient(circle at center,rgba(231,204,133,.26),rgba(198,154,76,.10) 38%,transparent 66%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.9vw,3.7rem);margin:1.3rem 0 1.2rem}
+.hero h1 em{font-style:normal;color:var(--gold-2)}
+.hero p.lead{font-size:clamp(1.02rem,1.35vw,1.16rem);color:rgba(247,243,236,.85);max-width:46ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin:2rem 0 1.2rem}
+.hero-micro{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;font-size:.86rem;color:rgba(247,243,236,.72);margin-bottom:2rem}
+.hero-micro span{display:flex;align-items:center;gap:.4rem}
+.hero-micro svg{width:15px;height:15px;color:var(--gold-2)}
+.trust{display:flex;flex-wrap:wrap;gap:1.6rem;padding-top:1.5rem;border-top:1px solid rgba(247,243,236,.14)}
+.trust div{display:flex;flex-direction:column}
+.trust b{font-family:'Fraunces',serif;font-size:1.26rem;color:var(--white)}
+.trust small{font-size:.73rem;letter-spacing:.04em;color:rgba(247,243,236,.62);text-transform:uppercase}
+
+.hero-media{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media .tag{position:absolute;left:0;right:0;bottom:0;padding:1.6rem 1.3rem 1.2rem;background:linear-gradient(0deg,rgba(14,30,56,.92),transparent);color:var(--sand)}
+.hero-media .tag b{font-family:'Fraunces',serif;font-size:1.15rem;display:block;margin-bottom:.2rem}
+.hero-media .tag small{font-size:.85rem;color:rgba(247,243,236,.78)}
+.float-badge{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--ink);font-weight:600;font-size:.8rem;padding:.4rem .85rem;border-radius:999px;box-shadow:var(--shadow-sm)}
+
+/* STATS */
+/* prova social — entregas reais */
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.6rem}
+.vid{position:relative;border-radius:20px;overflow:hidden;background:var(--ink);box-shadow:var(--shadow-sm);aspect-ratio:9/13}
+.vid video{width:100%;height:100%;object-fit:cover;display:block;background:var(--ink)}
+.vid .vcap{position:absolute;left:0;right:0;bottom:0;padding:2.2rem 1.1rem .9rem;pointer-events:none;
+  background:linear-gradient(0deg,rgba(14,30,56,.9),transparent);color:var(--sand)}
+.vid .vcap b{font-family:'Fraunces',serif;font-size:1.02rem;display:block}
+.vid .vcap small{font-size:.82rem;color:rgba(247,243,236,.8)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:.9rem}
+.gal figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-sm);
+  transition:transform .3s ease}
+.gal figure:hover{transform:translateY(-5px)}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .8rem .7rem;
+  background:linear-gradient(0deg,rgba(14,30,56,.88),transparent);color:var(--sand);
+  font-size:.78rem;font-weight:500;line-height:1.3}
+.proof-note{margin-top:1.8rem;text-align:center;color:var(--muted);font-size:.98rem}
+.proof-note b{color:var(--ink)}
+@media (max-width:960px){
+  .videos{grid-template-columns:1fr;max-width:420px;margin-inline:auto}
+  .gal{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:560px){ .gal{grid-template-columns:repeat(2,1fr)} }
+
+.stats{background:var(--ink-soft);color:var(--sand);padding:2rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stats-grid .st{padding:.4rem 1rem;position:relative}
+.stats-grid .st:not(:last-child)::after{content:"";position:absolute;right:0;top:15%;height:70%;width:1px;background:rgba(247,243,236,.16)}
+.stats-grid b{font-family:'Fraunces',serif;font-size:clamp(1.35rem,2.4vw,2.05rem);color:var(--gold-2);display:block;white-space:nowrap}
+.stats-grid small{font-size:.76rem;color:rgba(247,243,236,.7);text-transform:uppercase;letter-spacing:.06em}
+
+section.pad{padding:clamp(3.6rem,7vw,6.5rem) 0}
+.sec-head{max-width:62ch;margin-bottom:2.8rem}
+.sec-head h2{font-size:clamp(1.9rem,3.9vw,2.85rem);margin:1rem 0 .9rem}
+.sec-head p{color:var(--muted);font-size:1.05rem;max-width:58ch}
+.center{text-align:center;margin-inline:auto}
+.center .eyebrow{justify-content:center}
+.center .eyebrow::before{display:none}
+.cta-row{margin-top:2.4rem}
+
+/* DOR */
+.pain{background:var(--ink);color:var(--sand)}
+.pain .sec-head h2{color:var(--sand)}
+.pain .sec-head p{color:rgba(247,243,236,.78)}
+.pain-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+.pain-copy p{color:rgba(247,243,236,.82);font-size:1.05rem;margin-bottom:1rem;max-width:52ch}
+.pain-copy p.punch{font-family:'Fraunces',serif;font-size:clamp(1.25rem,2.2vw,1.6rem);color:var(--gold-2);line-height:1.25;margin:1.5rem 0}
+.pain-list{display:grid;gap:.75rem;margin-top:1.6rem}
+.pain-list div{display:flex;gap:.75rem;align-items:flex-start;font-size:.98rem;color:rgba(247,243,236,.85)}
+.pain-list svg{width:19px;height:19px;color:var(--red);flex:none;margin-top:3px}
+.rent-box{background:rgba(247,243,236,.06);border:1px solid rgba(247,243,236,.16);border-radius:22px;padding:clamp(1.6rem,3vw,2.2rem)}
+.rent-box h3{font-size:1.2rem;color:var(--sand);margin-bottom:1.2rem}
+.rent-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px dashed rgba(247,243,236,.18)}
+.rent-row:last-of-type{border-bottom:none}
+.rent-row small{font-size:.88rem;color:rgba(247,243,236,.72)}
+.rent-row b{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--gold-2);white-space:nowrap}
+.rent-note{margin-top:1.1rem;padding-top:1.1rem;border-top:1px solid rgba(247,243,236,.16);font-size:.92rem;color:rgba(247,243,236,.8)}
+.rent-note b{color:var(--white)}
+
+/* PILARES */
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.feat{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem 1.6rem;transition:transform .3s ease,box-shadow .3s ease}
+.feat:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm)}
+.feat .ic{width:48px;height:48px;border-radius:12px;background:var(--sand-2);display:grid;place-items:center;margin-bottom:1.1rem;color:var(--petrol)}
+.feat .ic svg{width:24px;height:24px}
+.feat h3{font-size:1.18rem;margin-bottom:.55rem}
+.feat p{font-size:.94rem;color:var(--muted)}
+
+/* RISCOS */
+.risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+.risk{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.risk:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.risk-top{padding:1.4rem 1.5rem 1.1rem;border-bottom:1px dashed var(--line)}
+.risk-lbl{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.6rem}
+.risk-lbl svg{width:14px;height:14px}
+.risk-top h3{font-size:1.12rem;color:var(--ink);line-height:1.25}
+.risk-bot{padding:1.1rem 1.5rem 1.4rem;background:rgba(47,125,90,.05)}
+.sol-lbl{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
+.sol-lbl svg{width:14px;height:14px}
+.risk-bot p{font-size:.94rem;color:var(--muted)}
+.risk-bot p b{color:var(--ink)}
+
+/* CONDIÇÕES */
+.forwho{background:var(--white);border-radius:26px;padding:clamp(2.2rem,4vw,3.4rem);box-shadow:var(--shadow-sm);display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+.forwho h2{font-size:clamp(1.8rem,3.4vw,2.4rem);margin:.9rem 0 1rem}
+.forwho p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.chip{display:flex;align-items:center;gap:.5rem;background:var(--sand);border:1px solid var(--line);padding:.7rem 1.15rem;border-radius:999px;font-weight:600;font-size:.95rem}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.cond{background:linear-gradient(150deg,var(--petrol),var(--ink));color:var(--sand);border-radius:20px;padding:2rem;display:grid;gap:1.1rem}
+.cond-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-bottom:1rem;border-bottom:1px solid rgba(247,243,236,.14)}
+.cond-row:last-of-type{border-bottom:none;padding-bottom:0}
+.cond-row small{text-transform:uppercase;letter-spacing:.12em;font-size:.71rem;color:rgba(247,243,236,.72);max-width:17ch}
+.cond-row b{font-family:'Fraunces',serif;font-size:1.85rem;color:var(--gold-2);white-space:nowrap}
+.cond .hint{font-size:.85rem;color:rgba(247,243,236,.78);text-align:center}
+
+/* PASSOS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.step{position:relative;padding-top:1rem}
+.step .num{font-family:'Fraunces',serif;font-size:2.5rem;color:var(--gold);line-height:1}
+.step h3{font-size:1.12rem;margin:.7rem 0 .5rem}
+.step p{font-size:.92rem;color:var(--muted)}
+.step::before{content:"";position:absolute;top:1.5rem;left:2.8rem;right:-1rem;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.step:last-child::before{display:none}
+
+/* IMÓVEIS */
+.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.prop-card{background:var(--white);color:var(--ink);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .3s ease,box-shadow .3s ease}
+.prop-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.prop-media{position:relative;aspect-ratio:4/3}
+.prop-media img{width:100%;height:100%;object-fit:cover}
+.badge-disc{position:absolute;top:12px;left:12px;right:12px;z-index:2;background:var(--gold);color:var(--ink);font-weight:600;font-size:.74rem;padding:.35rem .7rem;border-radius:999px;box-shadow:var(--shadow-sm);width:fit-content;max-width:calc(100% - 24px)}
+.prop-body{padding:1.1rem 1.25rem 1.3rem}
+.prop-loc{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:.4rem}
+.prop-title{font-family:'Fraunces',serif;font-size:1.12rem;margin:.25rem 0 .7rem}
+.prop-specs{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.81rem;color:var(--ink-soft);margin-bottom:.9rem}
+.price-row{padding-top:.85rem;border-top:1px dashed var(--line)}
+.perks{display:grid;gap:.45rem}
+.perks div{display:flex;align-items:flex-start;gap:.5rem;font-size:.88rem;color:var(--ink-soft);line-height:1.35}
+.perks svg{width:15px;height:15px;color:var(--green);flex:none;margin-top:3px}
+.perks .maybe{color:var(--muted)}
+.perks .maybe svg{color:var(--gold)}
+.prop-card .btn{width:100%;margin-top:.9rem;font-size:.9rem;padding:.78rem}
+.exclusive-note{margin-top:2rem;background:var(--white);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:1.4rem 1.6rem;display:flex;gap:1.2rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.exclusive-note p{color:var(--ink-soft);font-size:.98rem;max-width:58ch}
+.exclusive-note b{color:var(--ink)}
+
+/* REGIÕES */
+.regions{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.6rem}
+.region{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.4rem;display:flex;align-items:center;gap:.85rem;transition:transform .25s ease,box-shadow .25s ease}
+.region:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.region .pin{width:38px;height:38px;border-radius:10px;background:var(--sand-2);display:grid;place-items:center;color:var(--petrol);flex:none}
+.region .pin svg{width:19px;height:19px}
+.region b{font-size:1rem;display:block}
+.region small{font-size:.82rem;color:var(--muted)}
+
+/* PROVA SOCIAL */
+.testi-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:stretch}
+.testi-col{display:grid;gap:1.2rem}
+.testi{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.7rem}
+.testi .stars{color:var(--gold);letter-spacing:.15em;margin-bottom:.7rem}
+.testi p{font-size:1.02rem;color:var(--ink-soft)}
+.testi .who{display:flex;align-items:center;gap:.7rem;margin-top:1.1rem}
+.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(140deg,var(--petrol),var(--ink));display:grid;place-items:center;color:var(--gold-2);font-family:'Fraunces',serif;font-weight:700;flex:none}
+.testi .who b{font-size:.95rem}
+.testi .who small{display:block;color:var(--muted);font-size:.8rem}
+.seals{display:grid;gap:.7rem;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.7rem;align-content:center}
+.seals div{display:flex;align-items:center;gap:.7rem;font-size:.98rem;font-weight:500}
+.seals svg{width:20px;height:20px;color:var(--green);flex:none}
+
+/* FAQ */
+.acc{max-width:820px;margin-inline:auto}
+.acc details{background:var(--white);border:1px solid var(--line);border-radius:14px;margin-bottom:.8rem;overflow:hidden;transition:box-shadow .2s}
+.acc details[open]{box-shadow:var(--shadow-sm)}
+.acc summary{list-style:none;cursor:pointer;padding:1.15rem 1.4rem;font-weight:600;font-size:1.02rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary .ico{flex:none;width:25px;height:25px;border-radius:50%;background:var(--sand-2);display:grid;place-items:center;transition:transform .25s,background .25s;color:var(--petrol);font-weight:600}
+.acc details[open] summary .ico{transform:rotate(45deg);background:var(--gold);color:var(--ink)}
+.acc .ans{padding:0 1.4rem 1.25rem;color:var(--muted);font-size:.98rem}
+
+/* CTA FINAL */
+.final{position:relative;background:var(--ink);color:var(--sand);border-radius:28px;overflow:hidden;padding:clamp(2.6rem,5vw,4.2rem) clamp(1.6rem,4vw,3.5rem);text-align:center}
+.final::before{content:"";position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:80vw;height:80vw;max-width:760px;max-height:760px;background:radial-gradient(circle,rgba(231,204,133,.2),transparent 62%);pointer-events:none}
+.final>*{position:relative}
+.final h2{font-size:clamp(1.95rem,4vw,2.9rem);margin:1rem auto;max-width:20ch}
+.final p{color:rgba(247,243,236,.84);max-width:52ch;margin:0 auto 2rem;font-size:1.05rem}
+.final .reinforce{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;justify-content:center;margin-top:1.5rem;font-size:.92rem;color:rgba(247,243,236,.78)}
+.final .reinforce span{display:flex;align-items:center;gap:.45rem}
+.final .reinforce svg{width:16px;height:16px;color:var(--green)}
+
+footer{background:var(--ink-soft);color:rgba(247,243,236,.72);padding:3.2rem 0 2rem;margin-top:clamp(3.5rem,7vw,6rem)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.2rem;border-bottom:1px solid rgba(247,243,236,.12)}
+.foot-grid h4{font-family:'Instrument Sans',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.73rem;color:var(--gold-2);margin-bottom:1rem;font-weight:600}
+.foot-grid a{display:block;margin-bottom:.55rem;font-size:.92rem;opacity:.85;transition:opacity .2s}
+.foot-grid a:hover{opacity:1;color:var(--gold-2)}
+.foot-brand p{font-size:.9rem;max-width:36ch;margin:1rem 0}
+.foot-legal{padding-top:1.5rem;font-size:.79rem;color:rgba(247,243,236,.5);display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-between}
+
+/* WHATSAPP FLUTUANTE + BARRA FIXA */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(37,211,102,.75);transition:transform .25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.wa-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:61;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(14,30,56,.96);backdrop-filter:blur(10px);border-top:1px solid rgba(247,243,236,.14)}
+.wa-bar .btn{width:100%}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero-grid,.pain-grid{grid-template-columns:1fr;gap:2.5rem}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .prop-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step::before{display:none}
+  .forwho{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .regions{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media (max-width:700px){
+  .wa-float{display:none}
+  .wa-bar{display:block}
+  body{padding-bottom:78px}
+}
+@media (max-width:560px){
+  .stats-grid{grid-template-columns:1fr 1fr;gap:1.4rem}
+  .stats-grid .st::after{display:none}
+  .feat-grid,.prop-grid,.steps,.risk-grid,.regions{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-actions .btn{width:100%}
+  .brand-name{font-size:.98rem}
+  .logo-img{height:38px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+</style>
+<!-- PIXEL META: cole aqui o código do seu Pixel do Facebook/Meta Ads -->
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#topo">
+      <img src="midia/logo.png" alt="Efetive Imobiliária" class="logo-img">
+      <span class="brand-name">Efetive<span>Consultoria Imobiliária</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#consultoria">A consultoria</a>
+      <a href="#riscos">Por que importa</a>
+      <a href="#imoveis">Imóveis</a>
+      <a href="#regioes">Onde atuamos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-wa" data-wa="Olá! Cheguei pelo site da Efetive e quero falar com um consultor.">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      Falar agora
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Consultoria imobiliária · Grande Natal</span>
+      <h1>O melhor imóvel da Grande Natal <em>espera por você</em>.</h1>
+      <p class="lead">Somos especialistas em Minha Casa Minha Vida. Encontramos a casa certa para o seu perfil — com a melhor qualidade, a melhor taxa de juros e o maior subsídio a que você tem direito.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa btn-lg" data-wa="Olá! Cheguei pelo site da Efetive e quero falar com um consultor sobre o meu financiamento.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Falar com um consultor agora
+        </a>
+        <a class="btn btn-outline" href="#imoveis">Ver imóveis</a>
+      </div>
+      <div class="hero-micro">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Consultoria 100% gratuita</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Sem compromisso</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Atendimento personalizado</span>
+      </div>
+      <div class="trust">
+        <div><b>+12 anos</b><small>De mercado</small></div>
+        <div><b>+1.000</b><small>Famílias realizadas</small></div>
+        <div><b>Até R$ 55 mil</b><small>De subsídio</small></div>
+      </div>
+    </div>
+
+    <div class="hero-media reveal">
+      <span class="float-badge">Pronto para morar</span>
+      <img src="midia/hero.jpg" alt="Imóvel de alto padrão da Efetive ao entardecer">
+      <div class="tag">
+        <b>Imóveis selecionados a dedo</b>
+        <small>Qualidade, acabamento e valorização — o que a gente entrega de verdade.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="st"><b>+1.000</b><small>Famílias realizadas</small></div>
+    <div class="st"><b>12 anos</b><small>De mercado</small></div>
+    <div class="st"><b>R$ 55 mil</b><small>Subsídio possível</small></div>
+    <div class="st"><b>R$ 455</b><small>Parcela a partir de</small></div>
+  </div>
+</div>
+
+<!-- ============ A DOR ============ -->
+<section class="pad pain" id="dor">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A conta que ninguém faz</span>
+      <h2>Você sabe quanto já pagou de aluguel até hoje?</h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-copy reveal">
+        <p>Todo mês você deposita dinheiro na conta de alguém. E o aluguel reajusta todo ano — enquanto o seu salário, quase nunca.</p>
+        <p>Em 5 anos pagando R$ 1.500 de aluguel, você entrega mais de <b>R$ 90 mil</b> para o bolso de outra pessoa. E o imóvel que você poderia ter comprado? Valorizou.</p>
+        <p class="punch">Enquanto você paga o imóvel de alguém, o seu fica mais caro.</p>
+        <div class="pain-list">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Anos pagando aluguel sem construir nada</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Todo ano o aluguel sobe e o bolso aperta</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>A casa dos seus sonhos fica cada vez mais distante</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>E você não sabe por onde começar — nem se consegue</div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-wa btn-lg" data-wa="Olá! Cansei de pagar aluguel. Quero descobrir o que cabe no meu bolso.">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+            Chega de aluguel. Quero descobrir o que cabe no meu bolso
+          </a>
+        </div>
+      </div>
+
+      <div class="rent-box reveal">
+        <h3>O que o aluguel já levou do seu bolso</h3>
+        <div class="rent-row"><small>Aluguel de R$ 1.000 em 5 anos</small><b>R$ 60 mil</b></div>
+        <div class="rent-row"><small>Aluguel de R$ 1.500 em 5 anos</small><b>R$ 90 mil</b></div>
+        <div class="rent-row"><small>Aluguel de R$ 2.000 em 5 anos</small><b>R$ 120 mil</b></div>
+        <p class="rent-note">Esse dinheiro não volta e não vira patrimônio. <b>A mesma parcela, no financiamento, já estaria construindo a sua casa.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUÇÃO / PILARES ============ -->
+<section class="pad" id="consultoria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A solução</span>
+      <h2>Não é uma imobiliária comum. É consultoria imobiliária de verdade.</h2>
+      <p>Na Efetive a gente não empurra o primeiro imóvel que aparece. A gente senta, escuta, entende o seu perfil e busca o imóvel certo para você. E você não é abandonado no meio do caminho: acompanhamos do primeiro "oi" até a entrega das chaves — e depois também.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3>Análise de perfil real</h3>
+        <p>Descobrimos exatamente o que você pode comprar com a sua renda — sem forçar a barra e sem prometer o que não cabe no seu bolso.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5L12 2z"/></svg></div>
+        <h3>Os melhores imóveis</h3>
+        <p>Selecionamos os empreendimentos com melhor qualidade, acabamento e potencial de valorização da Grande Natal. Temos acesso ao mercado inteiro.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Proteção na escolha</h3>
+        <p>Evitamos que você caia em armadilhas: construção ruim, taxa de juros alta ou subsídio menor do que você tem direito.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Acompanhamento total</h3>
+        <p>Da simulação do crédito à assinatura, da documentação à entrega das chaves. Você não fica sozinho em nenhuma etapa.</p>
+      </div>
+    </div>
+    <div class="cta-row" style="text-align:center">
+      <a class="btn btn-wa btn-lg" data-wa="Olá! Quero uma consultoria gratuita para encontrar o melhor imóvel para o meu perfil.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Quero uma consultoria gratuita
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RISCOS ============ -->
+<section class="pad" id="riscos" style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O que ninguém te conta</span>
+      <h2>Escolher a imobiliária errada custa caro. Muito caro.</h2>
+      <p>A compra da sua casa envolve crédito, documentação e qualidade de construção. Um erro em qualquer um desses pontos te acompanha por anos de financiamento. Veja o que está em jogo — e como a Efetive protege você.</p>
+    </div>
+    <div class="risk-grid">
+      <div class="risk reveal">
+        <div class="risk-top">
+          <span class="risk-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>O risco</span>
+          <h3>Pagar juros mais altos e receber menos subsídio do que teria direito</h3>
+        </div>
+        <div class="risk-bot">
+          <span class="sol-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Com a Efetive</span>
+          <p>Somos <b>especialistas em financiamento Minha Casa Minha Vida</b>. Analisamos seu perfil para buscar a menor taxa e o maior subsídio possível. Uma diferença de pontos na taxa significa <b>milhares de reais</b> ao longo do financiamento.</p>
+        </div>
+      </div>
+      <div class="risk reveal">
+        <div class="risk-top">
+          <span class="risk-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>O risco</span>
+          <h3>Comprar um imóvel de baixa qualidade e herdar o problema</h3>
+        </div>
+        <div class="risk-bot">
+          <span class="sol-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Com a Efetive</span>
+          <p><b>Também somos construtora.</b> Conhecemos obra por dentro e sabemos reconhecer o que é bem construído e o que vai te dar dor de cabeça. Esse olhar técnico é o que separa uma boa compra de um arrependimento.</p>
+        </div>
+      </div>
+      <div class="risk reveal">
+        <div class="risk-top">
+          <span class="risk-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>O risco</span>
+          <h3>Ser abandonado no meio do processo, sem entender nada</h3>
+        </div>
+        <div class="risk-bot">
+          <span class="sol-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Com a Efetive</span>
+          <p>Acompanhamos você <b>do início ao fim</b>: simulação, crédito, documentação e assinatura. E o suporte <b>continua depois da entrega das chaves</b> — porque a nossa relação não termina na venda.</p>
+        </div>
+      </div>
+      <div class="risk reveal">
+        <div class="risk-top">
+          <span class="risk-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>O risco</span>
+          <h3>Comprar o imóvel errado, só porque era o que o corretor tinha para vender</h3>
+        </div>
+        <div class="risk-bot">
+          <span class="sol-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Com a Efetive</span>
+          <p>Prestamos uma <b>consultoria imobiliária de verdade</b>: entendemos o seu momento e te levamos à melhor compra — com acesso a todos os imóveis do mercado e à nossa carteira exclusiva.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-gold btn-lg" data-wa="Olá! Quero comprar meu imóvel com segurança e orientação. Podem me ajudar?">Quero comprar com segurança</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONDIÇÕES ============ -->
+<section class="pad" id="condicoes">
+  <div class="wrap">
+    <div class="forwho reveal">
+      <div>
+        <span class="eyebrow">Para quem é</span>
+        <h2>Não importa como você trabalha. Importa realizar o sonho.</h2>
+        <p>Você não precisa de holerite perfeito nem de uma grande entrada. A gente analisa o seu perfil de verdade e encontra o melhor caminho para aprovar o seu financiamento. E o melhor: quanto menor a sua renda, maior pode ser o seu subsídio.</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>CLT</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Autônomo</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>MEI</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Informal</span>
+        </div>
+      </div>
+      <div class="cond">
+        <div class="cond-row"><small>Subsídio do governo de até</small><b>R$ 55 mil</b></div>
+        <div class="cond-row"><small>Parcelas a partir de</small><b>R$ 455</b></div>
+        <div class="cond-row"><small>Renda a partir de</small><b>1 salário</b></div>
+        <p class="hint">Valores, subsídio e parcela variam conforme a sua renda e o seu perfil. Fale com um consultor e descubra as <b>suas</b> condições.</p>
+        <a class="btn btn-wa" data-wa="Olá! Quero saber quanto de subsídio eu tenho direito e como fica a minha parcela.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Descobrir o meu subsídio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="pad" style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Como a consultoria funciona</span>
+      <h2>Começa entendendo você. Termina com a chave na sua mão.</h2>
+      <p>Quatro passos simples. Você cuida do sonho, a gente cuida de todo o resto.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3>Entendemos você</h3><p>Escutamos o seu momento, a sua renda e o seu desejo. É daqui que sai o direcionamento certo.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Simulação e crédito</h3><p>Calculamos subsídio, parcela e taxa, e conduzimos toda a aprovação do financiamento.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>As melhores opções</h3><p>Apresentamos os imóveis certos para o seu perfil e bolso, com total transparência.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>E depois da chave também</h3><p>Documentação, assinatura, entrega — e o nosso suporte continua depois que você se muda.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMÓVEIS ============ -->
+<section class="pad" id="imoveis">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Nossa carteira</span>
+      <h2>Alguns imóveis que podem ser o seu</h2>
+      <p style="margin-inline:auto">Estes são apenas alguns exemplos. Temos acesso a todos os imóveis do mercado e a oportunidades exclusivas — conte para a gente o que você procura.</p>
+    </div>
+
+    <div class="prop-grid">
+      <div class="prop-card reveal">
+        <div class="prop-media">
+          <span class="badge-disc">Terreno de +300 m²</span>
+          <img src="midia/card1.jpg" alt="Casa em Bela Parnamirim, Parnamirim/RN">
+        </div>
+        <div class="prop-body">
+          <span class="prop-loc"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Parnamirim · Bela Parnamirim</span>
+          <h3 class="prop-title">Casa 2 quartos · terreno de +300 m²</h3>
+          <div class="prop-specs"><span>🛏️ 2 quartos</span><span>🚿 1 banheiro</span><span>📐 +300 m² terreno</span></div>
+          <div class="price-row"><div class="perks"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Terreno de mais de 300 m²</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Pronta para morar</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Financiável pelo Minha Casa Minha Vida</div></div></div>
+          <a class="btn btn-wa" data-wa="Tenho interesse na casa em Bela Parnamirim, Parnamirim/RN (2 quartos, 1 banheiro, terreno de +300 m²). Gostaria de saber o valor e as condições.">Ver valor e condições</a>
+        </div>
+      </div>
+
+      <div class="prop-card reveal">
+        <div class="prop-media">
+          <span class="badge-disc">Possibilidade de entrada zero</span>
+          <img src="midia/card2.jpg" alt="Casa em Bela Macaíba, Macaíba/RN">
+        </div>
+        <div class="prop-body">
+          <span class="prop-loc"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Macaíba · Bela Macaíba</span>
+          <h3 class="prop-title">Casa 2 quartos · área gourmet</h3>
+          <div class="prop-specs"><span>🛏️ 2 quartos</span><span>🚿 1 banheiro</span><span>📐 70 m²</span></div>
+          <div class="price-row"><div class="perks"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Área gourmet</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Pronta para morar</div><div class="maybe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5L12 2z"/></svg>Possibilidade de entrada zero</div></div></div>
+          <a class="btn btn-wa" data-wa="Tenho interesse na casa em Bela Macaíba, Macaíba/RN (2 quartos, 1 banheiro, área gourmet, 70 m²). Gostaria de saber o valor e as condições.">Ver valor e condições</a>
+        </div>
+      </div>
+
+      <div class="prop-card reveal">
+        <div class="prop-media">
+          <span class="badge-disc">Possibilidade de entrada zero</span>
+          <img src="midia/card3.jpg" alt="Casa em Bela Macaíba, Macaíba/RN">
+        </div>
+        <div class="prop-body">
+          <span class="prop-loc"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Macaíba · Bela Macaíba</span>
+          <h3 class="prop-title">Casa 2 quartos · área gourmet</h3>
+          <div class="prop-specs"><span>🛏️ 2 quartos</span><span>🚿 1 banheiro</span><span>📐 62 m²</span></div>
+          <div class="price-row"><div class="perks"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Área gourmet</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Pronta para morar</div><div class="maybe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5L12 2z"/></svg>Possibilidade de entrada zero</div></div></div>
+          <a class="btn btn-wa" data-wa="Tenho interesse na casa em Bela Macaíba, Macaíba/RN (2 quartos, 1 banheiro, área gourmet, 62 m²). Gostaria de saber o valor e as condições.">Ver valor e condições</a>
+        </div>
+      </div>
+
+      <div class="prop-card reveal">
+        <div class="prop-media">
+          <span class="badge-disc">Documentação inclusa</span>
+          <img src="midia/card4.jpg" alt="Casa em condomínio fechado no Regomoleiro, São Gonçalo do Amarante/RN">
+        </div>
+        <div class="prop-body">
+          <span class="prop-loc"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>São Gonçalo do Amarante · Regomoleiro</span>
+          <h3 class="prop-title">Casa 2 quartos · condomínio fechado</h3>
+          <div class="prop-specs"><span>🛏️ 2 quartos</span><span>🚿 1 banheiro</span><span>📐 68 m²</span></div>
+          <div class="price-row"><div class="perks"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Condomínio fechado</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Documentação inclusa</div><div class="maybe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5L12 2z"/></svg>Possibilidade de entrada zero</div></div></div>
+          <a class="btn btn-wa" data-wa="Tenho interesse na casa em condomínio fechado no Regomoleiro, São Gonçalo do Amarante/RN (2 quartos, 1 banheiro, 68 m²). Gostaria de saber o valor e as condições.">Ver valor e condições</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="exclusive-note reveal">
+      <p><b>Os valores e as condições variam conforme o seu perfil.</b> Cada família tem uma renda, um subsídio e uma parcela diferentes — por isso falamos de perto com você. Isso aqui é só uma amostra: temos acesso a todos os imóveis do mercado.</p>
+      <a class="btn btn-gold" data-wa="Olá! Não encontrei o imóvel ideal no site. Podem buscar um imóvel para o meu perfil?">Quero que busquem para mim</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGIÕES ============ -->
+<section class="pad" id="regioes" style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Onde atuamos</span>
+      <h2>Os melhores imóveis da Grande Natal</h2>
+      <p>Bairros em expansão, com imóveis de alta qualidade, excelente acabamento e forte potencial de valorização — perfeitos para quem quer sair do aluguel e construir patrimônio.</p>
+    </div>
+    <div class="regions">
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Parnamirim</b><small>Alta procura e valorização</small></div></div>
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>São Gonçalo do Amarante</b><small>Condomínios e casas novas</small></div></div>
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Macaíba</b><small>Ótimo custo-benefício</small></div></div>
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Extremoz</b><small>Região em expansão</small></div></div>
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>São José de Mipibu</b><small>Novos empreendimentos</small></div></div>
+      <div class="region reveal"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Natal</b><small>Toda a região metropolitana</small></div></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-wa btn-lg" data-wa="Olá! Quero saber quais imóveis vocês têm disponíveis na minha região.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Ver imóveis na minha região
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROVA SOCIAL ============ -->
+<section class="pad" id="prova">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Histórias reais</span>
+      <h2>Elas saíram do aluguel. E hoje têm a chave na mão.</h2>
+      <p style="margin-inline:auto">Não são promessas — são famílias de verdade que confiaram na Efetive e realizaram o sonho da casa própria. A próxima história pode ser a sua.</p>
+    </div>
+
+    <div class="videos">
+      <div class="vid reveal">
+        <video controls preload="none" playsinline poster="midia/capa-1.jpg">
+          <source src="midia/entrega-1.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <div class="vcap"><b>Entrega das chaves</b><small>Mais uma família na casa própria</small></div>
+      </div>
+      <div class="vid reveal">
+        <video controls preload="none" playsinline poster="midia/capa-2.jpg">
+          <source src="midia/entrega-2.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <div class="vcap"><b>O dia mais esperado</b><small>Do aluguel para o imóvel próprio</small></div>
+      </div>
+    </div>
+
+    <div class="gal">
+      <figure class="reveal"><img src="midia/familia-1.jpg" alt="Família recebendo as chaves da casa própria com a Efetive Imobiliária" loading="lazy"><figcaption>Sonho realizado</figcaption></figure>
+      <figure class="reveal"><img src="midia/familia-2.jpg" alt="Cliente da Efetive Imobiliária com as chaves do seu imóvel" loading="lazy"><figcaption>Chave na mão</figcaption></figure>
+      <figure class="reveal"><img src="midia/familia-3.jpg" alt="Entrega de chaves da Efetive Imobiliária" loading="lazy"><figcaption>Saiu do aluguel</figcaption></figure>
+      <figure class="reveal"><img src="midia/familia-4.jpg" alt="Família realizando o sonho da casa própria com a Efetive" loading="lazy"><figcaption>Casa própria</figcaption></figure>
+      <figure class="reveal"><img src="midia/familia-5.jpg" alt="Cliente Efetive Imobiliária na entrega do imóvel" loading="lazy"><figcaption>Mais uma conquista</figcaption></figure>
+    </div>
+
+    <p class="proof-note reveal"><b>Mais de 1.000 famílias realizadas em 12 anos de mercado.</b> Consultoria 100% gratuita · Somos também construtora · Acompanhamento até depois da chave.</p>
+
+    <div class="cta-row" style="text-align:center">
+      <a class="btn btn-wa btn-lg" data-wa="Olá! Vi as histórias de quem realizou o sonho da casa própria com a Efetive e quero ser o próximo. Podem me ajudar?">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Quero ser a próxima história
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="pad" id="faq" style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Suas dúvidas têm resposta</span>
+      <h2>As perguntas que tiram o seu sono</h2>
+      <p style="margin-inline:auto">Antes de comprar, você precisa entender. Estas são as dúvidas que mais ouvimos.</p>
+    </div>
+    <div class="acc reveal">
+      <details open>
+        <summary>Como funciona a consultoria da Efetive?<span class="ico">+</span></summary>
+        <div class="ans">É simples e 100% gratuita. Você fala com a gente pelo WhatsApp, entendemos o seu perfil, descobrimos o seu crédito e buscamos o melhor imóvel para você. Sem compromisso nenhum.</div>
+      </details>
+      <details>
+        <summary>Preciso ter entrada?<span class="ico">+</span></summary>
+        <div class="ans">Não necessariamente. O Minha Casa Minha Vida oferece subsídio de até R$ 55 mil e, dependendo da sua renda, esse valor pode cobrir grande parte ou até a totalidade do que seria a entrada. Temos imóveis com <b>possibilidade</b> de entrada zero — mas isso depende da sua renda, do seu crédito aprovado e do imóvel escolhido. Por isso analisamos o seu caso antes de prometer qualquer coisa.</div>
+      </details>
+      <details>
+        <summary>35 anos de financiamento não é muito tempo?<span class="ico">+</span></summary>
+        <div class="ans">Essa é a maior dúvida de quem compra o primeiro imóvel. A verdade é que cada parcela que você paga reduz o seu saldo devedor — você não fica preso 35 anos. Muita gente quita antes do prazo. E enquanto você paga, o imóvel valoriza: é o dinheiro trabalhando para você, não contra você.</div>
+      </details>
+      <details>
+        <summary>Qual vai ser a minha taxa de juros?<span class="ico">+</span></summary>
+        <div class="ans">As taxas do Minha Casa Minha Vida estão entre as menores do mercado imobiliário e variam conforme a sua renda. Nós mostramos exatamente a sua taxa e a sua parcela antes de você decidir qualquer coisa.</div>
+      </details>
+      <details>
+        <summary>Como sei se o meu crédito vai ser aprovado?<span class="ico">+</span></summary>
+        <div class="ans">A gente faz essa análise para você. Com a sua renda e documentação, simulamos o financiamento e descobrimos exatamente quanto de crédito você tem direito — sem sustos e sem surpresas.</div>
+      </details>
+      <details>
+        <summary>Tenho direito a quanto de subsídio?<span class="ico">+</span></summary>
+        <div class="ans">O subsídio do governo pode chegar a R$ 55 mil e é maior quanto menor for a sua renda. Simulamos o seu valor gratuitamente para você saber com quanto pode contar.</div>
+      </details>
+      <details>
+        <summary>Vocês atendem em quais cidades?<span class="ico">+</span></summary>
+        <div class="ans">Atendemos em toda a Grande Natal: Parnamirim, São Gonçalo do Amarante, Macaíba, Extremoz, São José de Mipibu e Natal.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="final reveal">
+      <span class="eyebrow" style="justify-content:center">Dê o primeiro passo</span>
+      <h2>Sua casa própria está mais perto do que você imagina.</h2>
+      <p>Não é promessa. É consultoria de verdade. A gente descobre o melhor imóvel para o seu perfil, com a melhor qualidade e o melhor custo-benefício. Você só precisa dar o primeiro passo.</p>
+      <a class="btn btn-wa btn-lg" data-wa="Olá! Quero falar com um consultor da Efetive e dar o primeiro passo para a minha casa própria.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Quero falar com um consultor agora
+      </a>
+      <div class="reinforce">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Consultoria 100% gratuita</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Sem compromisso</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Atendimento personalizado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#topo"><img src="midia/logo.png" alt="Efetive Imobiliária" class="logo-img"><span class="brand-name" style="color:var(--sand)">Efetive<span>Consultoria Imobiliária</span></span></a>
+        <p>Especialistas em imóveis Minha Casa Minha Vida e financiamento na Grande Natal. Levamos você até a melhor compra — do início ao fim, e também depois da chave.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <a href="#consultoria">A consultoria</a>
+        <a href="#riscos">Por que importa</a>
+        <a href="#imoveis">Imóveis</a>
+        <a href="#regioes">Onde atuamos</a>
+        <a href="#faq">Dúvidas</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a data-wa="Olá! Cheguei pelo site da Efetive e quero falar com um consultor.">WhatsApp · (84) 99604-9330</a>
+        <a href="mailto:ryurimatheusassessoria@gmail.com">ryurimatheusassessoria@gmail.com</a>
+        <a href="#" id="ig">Instagram</a>
+        <a href="#">Natal · RN</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Efetive Imobiliária · Todos os direitos reservados</span>
+      <span>CRECI PJ 8938 · CNPJ 51.443.071/0001-08</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante (desktop) -->
+<a class="wa-float" data-wa="Olá! Cheguei pelo site da Efetive e quero falar com um consultor.">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<!-- Barra fixa (mobile) -->
+<div class="wa-bar">
+  <a class="btn btn-wa" data-wa="Olá! Cheguei pelo site da Efetive e quero falar com um consultor.">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.7-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    Falar com um consultor no WhatsApp
+  </a>
+</div>
+
+<script>
+/* ===== CONFIGURAÇÃO ===== */
+const WHATSAPP  = "5584996049330";
+const INSTAGRAM = "https://www.instagram.com/leiloesefetiveimobiliaria/";
+
+/* Preserva UTMs da campanha na mensagem (para saber a origem do lead) */
+function origem(){
+  const p = new URLSearchParams(location.search);
+  const src = p.get('utm_source') || p.get('fbclid') ? (p.get('utm_source') || 'meta') : '';
+  const cmp = p.get('utm_campaign') || '';
+  let t = '';
+  if(src) t += `%0A%0A_origem: ${src}${cmp ? ' / ' + cmp : ''}_`;
+  return t;
+}
+
+document.querySelectorAll('[data-wa]').forEach(el=>{
+  el.style.cursor = 'pointer';
+  el.addEventListener('click',e=>{
+    e.preventDefault();
+    const msg = encodeURIComponent(el.getAttribute('data-wa')) + origem();
+    /* Evento do Pixel Meta (dispara se o pixel estiver instalado) */
+    if(typeof fbq === 'function'){ fbq('track','Contact'); }
+    window.open(`https://wa.me/${WHATSAPP}?text=${msg}`,'_blank');
+  });
+});
+
+document.getElementById('ig').href = INSTAGRAM;
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
